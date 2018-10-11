@@ -40,6 +40,7 @@ h4 img {
 
 .photo {
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -52,19 +53,22 @@ h4 img {
 }
 
 #container-1 .photo img:hover {
-	transform:rotate(45deg);
+  transform:rotate(45deg);
+  transform-origin: 0% 0%;
 }
 
 #container-2 .photo img:hover {
-	transform:scale(1.2);
+  transform:scale(1.2);
+  transform-origin: 0% 0%;
 }
 
 #container-3 .photo img:hover {
-	transform: skewX(35deg);
+  transform: skewX(35deg);
+  transform-origin: 100% 100%;
 }
 
 #container-4 .photo img:hover {
-	transform:rotate(45deg);
+  transform: rotate(45deg);
 }
 
 #container-5 .photo img:hover {
@@ -73,6 +77,11 @@ h4 img {
 
 #container-6 .photo img:hover {
 	transform: skewX(35deg);
+}
+
+.photo:hover img {
+  transform: scale(1.3);
+  overflow: hidden;
 }
 
 .photo-overlay {
